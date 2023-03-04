@@ -1,0 +1,28 @@
+spring:
+  profiles:
+    active: dev
+
+student:
+  name: huoranger
+  age: 16
+  maps: {k1: v1, k2: v2}
+  list:
+    - code
+    - music
+    - girl
+  cat:
+    name: viva
+
+
+---
+spring:
+  profiles: pro
+
+server:
+  port: 7777
+
+---
+spring:
+  profiles: dev
+server:
+  port: 8888
